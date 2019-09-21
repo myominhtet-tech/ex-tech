@@ -24,6 +24,6 @@ gulp.task('watch', function() {
 gulp.task('cssInject', gulp.series('styles', function() {
 
     //  gulp.watch("")
-    return gulp.src('./app/temp/styles/style.css')
+    return gulp.src('./app/temp/styles/styles.css')
         .pipe(browserSync.stream());
 }));
